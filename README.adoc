@@ -1,0 +1,7 @@
+= Learning Python
+
+== Lesson 1: String
+
+The file `UdemyLecturesAndPractices.py` in branch `explain` is an explanation of the solutions done by @ahmedibrahim365 in the master branch file `UdemyLectures&Practices.py`. As you may have noticed, the file is named to remove the somewhat problematic `&` in the file name and made to follow the Unix/Linux file endings.
+
+OH! We also added this readme to make it easy to remember what we've done. Please see the source code file `UdemyLecturesAndPractices.py` for for the **why**.
