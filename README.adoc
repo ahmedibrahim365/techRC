@@ -8,3 +8,8 @@ OH! We also added this readme to make it easy to remember what we've done. Pleas
 
 #this is the readme.adoc
 #it can also be readme.me
+
+== I can add my own section
+
+Here to the new section!!
+
