@@ -1,0 +1,19 @@
+= Learning Python
+
+== Lesson 1: String
+
+The file `UdemyLecturesAndPractices.py` in branch `explain` is an explanation of the solutions done by @ahmedibrahim365 in the master branch file `UdemyLectures&Practices.py`. As you may have noticed, the file is named to remove the somewhat problematic `&` in the file name and made to follow the Unix/Linux file endings.
+
+OH! We also added this readme to make it easy to remember what we've done. Please see the source code file `UdemyLecturesAndPractices.py` for for the **why**.
+
+#this is the readme.adoc
+#it can also be readme.me
+# can it also be a .txt file ??
+
+== I can add my own section
+
+Here to the new section!!
+
+pi azan is the NEW COOL thing. It wants to use a device such as the pi with a bit of script to announce or display prayer time.
+First script [fetch salah time] confirms the site-server authentication and connection.
+The [salah time table] is working on prayer time by date.
