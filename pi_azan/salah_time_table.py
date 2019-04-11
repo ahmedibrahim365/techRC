@@ -2,27 +2,35 @@
 
 import numpy as np
 import pandas as pd
+from bs4 import BeautifulSoup
 
-from datetime import date
+from datetime import datetime
 import requests
 import json
 from pprint import pprint
 
 
-# reading table contents from URL
-contents = pd.read_html('http://theictn.org/prayertimetable.aspx')
-pprint(contents)
+# Pandas
+# navigating table contents from URL
+url_mosque = ('http://theictn.org/prayertimetable.aspx')
+url_mosque_icn = requests.get('https://www.muslimpro.com/en/Prayer-times-Nashville-TN-United-States-4644585')
+contents = (url_mosque_icn, 'html.parser')
 
-if date == date.today():
-    print(contents)
-else:
-    print('not today')
+a = BeautifulSoup(url_mosque_icn.content, 'html.parser')
+#
+
+# Date filter
+weekday_filter = datetime.now()
+print(weekday_filter.strftime('%A'))
+#
 
 
-# IN TESTING...
+# using soup to extract single tag
+url_type_find_all = a.find( class_="mp-widget-timetable").get_text()
 
-# Creating Class with date/time values
-#class contents:
-#    def __init__(self, date):
-#        self.contents = date.today
-#        self.contents = pd.DataFrame()
+
+
+print(url_type_find_all)
+#print(url_pr_str, url_pr_str1)
+
+

@@ -25,8 +25,8 @@ print('---------------------------------------------------------------------B') 
 url_headers_content = url_mosque.headers['Content-Type']
 print(url_headers_content)
 print('---------------------------------------------------------------------C')      #separator
-# Confirming(some of) the table values exist in URL
-url_table_keyvalue = {'Date':'value1', 'Prayer Day':'Value2', 'Hijriy Day':'value3'}
+# Confirming(some of) the table values exist in URL                             (not working...) (semantic error)
+url_table_keyvalue = {'Date': 'value1', 'Prayer Day': 'Value2', 'Hijriy Day': 'value3'}
 url_parameters = requests.get('http://theictn.org/prayertimetable.aspx', params=url_table_keyvalue)
 print(url_parameters)
 print('---------------------------------------------------------------------D')      #separator
